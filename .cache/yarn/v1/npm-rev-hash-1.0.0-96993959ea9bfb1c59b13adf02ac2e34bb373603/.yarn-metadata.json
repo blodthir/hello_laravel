@@ -1,0 +1,57 @@
+{
+  "manifest": {
+    "name": "rev-hash",
+    "version": "1.0.0",
+    "description": "Create a hash for file revving",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sindresorhus/rev-hash.git"
+    },
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    },
+    "engines": {
+      "node": ">=0.10.0"
+    },
+    "scripts": {
+      "test": "node test.js"
+    },
+    "files": [
+      "index.js"
+    ],
+    "keywords": [
+      "hash",
+      "crypto",
+      "md5",
+      "rev",
+      "revving",
+      "web",
+      "buffer",
+      "file",
+      "cache",
+      "caching"
+    ],
+    "devDependencies": {
+      "ava": "0.0.4"
+    },
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-rev-hash-1.0.0-96993959ea9bfb1c59b13adf02ac2e34bb373603/package.json",
+    "readmeFilename": "readme.md",
+    "readme": "# rev-hash [![Build Status](https://travis-ci.org/sindresorhus/rev-hash.svg?branch=master)](https://travis-ci.org/sindresorhus/rev-hash)\n\n> Create a hash for file revving\n\nIt will create a `md5` hash from the input buffer and slice it to 10 characters, which is unique enough for this purpose. If you think you need a different hash algorithm or a longer hash, [you're wrong](http://blog.risingstack.com/automatic-cache-busting-for-your-css/).\n\n\n## Install\n\n```\n$ npm install --save rev-hash\n```\n\n\n## Usage\n\n```js\nvar fs = require('fs');\nvar revHash = require('rev-hash');\nvar buffer = fs.readFileSync('unicorn.png');\n\nrevHash(buffer);\n//=> 'bb9d8fe615'\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/rev-hash/download/rev-hash-1.0.0.tgz#96993959ea9bfb1c59b13adf02ac2e34bb373603",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/rev-hash/download/rev-hash-1.0.0.tgz",
+    "hash": "96993959ea9bfb1c59b13adf02ac2e34bb373603",
+    "registry": "npm",
+    "packageName": "rev-hash"
+  },
+  "registry": "npm",
+  "hash": "96993959ea9bfb1c59b13adf02ac2e34bb373603"
+}

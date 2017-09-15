@@ -1,0 +1,56 @@
+{
+  "manifest": {
+    "name": "partialify",
+    "version": "3.1.6",
+    "description": "require()-able HTML, CSS, and (potentially) more",
+    "main": "index.js",
+    "scripts": {
+      "test": "tape test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bclinkinbeard/partialify"
+    },
+    "keywords": [
+      "browser",
+      "browserify",
+      "browserify-transform",
+      "require",
+      "static",
+      "asset",
+      "bundle",
+      "partial"
+    ],
+    "author": {
+      "name": "Ben Clinkinbeard"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/bclinkinbeard/partialify/issues"
+    },
+    "dependencies": {
+      "string-to-js": "0.0.1",
+      "through": "^2.3.4"
+    },
+    "devDependencies": {
+      "tape": "^3.2.0",
+      "browserify": ">=3.24.1 <9.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-partialify-3.1.6-7f440f1dee92a85553f584e02bd9280570347d18/package.json",
+    "readmeFilename": "README.md",
+    "readme": "partialify\n==========\n\nrequire() file contents of HTML, CSS and (potentially) more into a variable as a string.\n\nSupports HTML and CSS out of the box, enabling code like this.\n```js\nvar html = require('./some.html'),\n\tcss = require('./some.css');\n```\n\nTo use, specify as a Browserify transform in your `package.json` or programmatically like so:\n```js\nvar b = require('browserify')(),\n\tfs = require('fs'),\n\tp = require('partialify');\n\nb.add('./entry.js');\nb.transform(p);\nb.bundle().pipe(fs.createWriteStream('./bundle.js'));\n```\n\nTo support other file types use the custom version. You can either augment the default supported file types or specify a completely custom list.\n\n```js\nvar b = require('browserify')(),\n\tfs = require('fs'),\n\tp = require('partialify/custom');\n\nb.add('./entry.js');\n\nb.transform(p.alsoAllow('xml'));\n// or\nb.transform(p.alsoAllow(['xml', 'csv']));\n// or\nb.transform(p.onlyAllow(['xml', 'csv']));\n\nb.bundle().pipe(fs.createWriteStream('./bundle.js'));\n```\n\n### Customizing from the CLI\n\n`browserify index.js -t [ partialify --alsoAllow svg --alsoAllow xml ] -o bundle.js`\n\n`browserify index.js -t [ partialify --onlyAllow svg --onlyAllow tsv ] -o bundle.js`\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2014 Ben Clinkinbeard\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/partialify/download/partialify-3.1.6.tgz#7f440f1dee92a85553f584e02bd9280570347d18",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/partialify/download/partialify-3.1.6.tgz",
+    "hash": "7f440f1dee92a85553f584e02bd9280570347d18",
+    "registry": "npm",
+    "packageName": "partialify"
+  },
+  "registry": "npm",
+  "hash": "7f440f1dee92a85553f584e02bd9280570347d18"
+}

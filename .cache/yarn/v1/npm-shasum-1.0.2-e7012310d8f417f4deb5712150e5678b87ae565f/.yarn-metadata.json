@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "name": "shasum",
+    "version": "1.0.2",
+    "homepage": "https://github.com/dominictarr/shasum",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/dominictarr/shasum.git"
+    },
+    "dependencies": {
+      "json-stable-stringify": "~0.0.0",
+      "sha.js": "~2.4.4"
+    },
+    "devDependencies": {},
+    "browser": {
+      "./index.js": "./browser.js"
+    },
+    "scripts": {
+      "test": "node test/index.js && node test/index.js browser"
+    },
+    "author": {
+      "name": "'Dominic Tarr'",
+      "email": "dominic.tarr@gmail.com",
+      "url": "http://dominictarr.com"
+    },
+    "license": "MIT",
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-shasum-1.0.2-e7012310d8f417f4deb5712150e5678b87ae565f/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# shasum\n\nSingle function that return the sha1sum.\nInstalling this is just a little bit quicker than reading the crypto documentation.\n\n``` js\nvar shasum = require('shasum')\nshasum(string || buffer || object)\n```\n\nOh yeah, it works in the browser too, with [browserify](https://npmjs.org/package/browserify)\n\n## License\n\nMIT\n",
+    "description": "Single function that return the sha1sum. Installing this is just a little bit quicker than reading the crypto documentation.",
+    "licenseText": "Copyright (c) 2012 'Dominic Tarr'\n\nPermission is hereby granted, free of charge, \nto any person obtaining a copy of this software and \nassociated documentation files (the \"Software\"), to \ndeal in the Software without restriction, including \nwithout limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell \ncopies of the Software, and to permit persons to whom \nthe Software is furnished to do so, \nsubject to the following conditions:\n\nThe above copyright notice and this permission notice \nshall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, \nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES \nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. \nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR \nANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, \nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE \nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/shasum/download/shasum-1.0.2.tgz#e7012310d8f417f4deb5712150e5678b87ae565f",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/shasum/download/shasum-1.0.2.tgz",
+    "hash": "e7012310d8f417f4deb5712150e5678b87ae565f",
+    "registry": "npm",
+    "packageName": "shasum"
+  },
+  "registry": "npm",
+  "hash": "e7012310d8f417f4deb5712150e5678b87ae565f"
+}

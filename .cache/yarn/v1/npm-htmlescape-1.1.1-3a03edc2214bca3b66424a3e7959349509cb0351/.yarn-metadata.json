@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "name": "htmlescape",
+    "version": "1.1.1",
+    "description": "Properly escape JSON for usage as an object literal inside of a `<script>` tag",
+    "keywords": [
+      "escape",
+      "encoding",
+      "html",
+      "json",
+      "template"
+    ],
+    "homepage": "https://github.com/zertosh/htmlescape",
+    "license": "MIT",
+    "author": {
+      "name": "Andres Suarez",
+      "email": "zertosh@gmail.com"
+    },
+    "main": "htmlescape.js",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/zertosh/htmlescape.git"
+    },
+    "scripts": {
+      "test": "tape test/*.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "tape": "^3.0.0"
+    },
+    "engines": {
+      "node": ">=0.10"
+    },
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-htmlescape-1.1.1-3a03edc2214bca3b66424a3e7959349509cb0351/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# htmlescape\n\nProperly escape JSON for usage as an object literal inside of a `<script>` tag. Use `htmlescape` in place of `JSON.stringify`. For more info see [JSON: The JavaScript subset that isn't](http://timelessrepo.com/json-isnt-a-javascript-subset).\n\n## Transformations\n\n| from     | to        |\n| -------- |:---------:|\n| `&`      | `\\\\u0026` |\n| `>`      | `\\\\u003e` |\n| `<`      | `\\\\u003c` |\n| `\\u2028` | `\\\\u2028` |\n| `\\u2029` | `\\\\u2029` |\n\n\n## Usage\n\n```js\nvar htmlescape = require('htmlescape');\nhtmlescape({prop:'value'});\n//=> '{\"prop\":\"value\"}'\n```\n\nOr in your templates:\n\n```html\n<script>\nvar payload = <%= htmlescape(payload) %>;\n</script>\n```\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2014 Andres Suarez\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/htmlescape/download/htmlescape-1.1.1.tgz#3a03edc2214bca3b66424a3e7959349509cb0351",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/htmlescape/download/htmlescape-1.1.1.tgz",
+    "hash": "3a03edc2214bca3b66424a3e7959349509cb0351",
+    "registry": "npm",
+    "packageName": "htmlescape"
+  },
+  "registry": "npm",
+  "hash": "3a03edc2214bca3b66424a3e7959349509cb0351"
+}

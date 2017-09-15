@@ -1,0 +1,59 @@
+{
+  "manifest": {
+    "name": "rev-path",
+    "version": "1.0.0",
+    "description": "Create a revved file path",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sindresorhus/rev-path.git"
+    },
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    },
+    "engines": {
+      "node": ">=0.10.0"
+    },
+    "scripts": {
+      "test": "node test.js"
+    },
+    "files": [
+      "index.js"
+    ],
+    "keywords": [
+      "rev",
+      "revving",
+      "web",
+      "file",
+      "name",
+      "filename",
+      "path",
+      "cache",
+      "caching"
+    ],
+    "dependencies": {
+      "modify-filename": "^1.0.0"
+    },
+    "devDependencies": {
+      "ava": "0.0.4"
+    },
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-rev-path-1.0.0-d4ccb436ac3370c4607175ce88eafc5c65c5d653/package.json",
+    "readmeFilename": "readme.md",
+    "readme": "# rev-path [![Build Status](https://travis-ci.org/sindresorhus/rev-path.svg?branch=master)](https://travis-ci.org/sindresorhus/rev-path)\n\n> Create a [revved file path](http://blog.risingstack.com/automatic-cache-busting-for-your-css/)\n\n\n## Install\n\n```\n$ npm install --save rev-path\n```\n\n\n## Usage\n\n```js\nvar revPath = require('rev-path');\nvar hash = 'bb9d8fe615'\n\nvar path = revPath('src/unicorn.png', hash);\n//=> 'src/unicorn-bb9d8fe615.png'\n\nrevPath('src/unicorn.png', Date.now());\n//=> 'src/unicorn-1432309925925.png'\n\n// you can also revert an already hashed path\nrevPath.revert(path, hash);\n//=> 'src/unicorn.png'\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/rev-path/download/rev-path-1.0.0.tgz#d4ccb436ac3370c4607175ce88eafc5c65c5d653",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/rev-path/download/rev-path-1.0.0.tgz",
+    "hash": "d4ccb436ac3370c4607175ce88eafc5c65c5d653",
+    "registry": "npm",
+    "packageName": "rev-path"
+  },
+  "registry": "npm",
+  "hash": "d4ccb436ac3370c4607175ce88eafc5c65c5d653"
+}

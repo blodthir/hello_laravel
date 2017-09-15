@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "name": "debug-fabulous",
+    "version": "0.0.4",
+    "description": "visionmedia debug extensions rolled into one",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha ./test/**/*test.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "http://www.github.com/nmccready/debug-fabulous"
+    },
+    "keywords": [
+      "debug",
+      "lazy",
+      "lazy-eval"
+    ],
+    "author": {
+      "name": "Nicholas McCready"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "debug": "2.X",
+      "lazy-debug-legacy": "0.0.X",
+      "object-assign": "4.1.0"
+    },
+    "devDependencies": {
+      "babel-eslint": "7.X",
+      "chai": "3.X",
+      "eslint": "3.X",
+      "hook-std": "0.X",
+      "mocha": "3.X"
+    },
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-debug-fabulous-0.0.4-fa071c5d87484685424807421ca4b16b0b1a0763/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# debug-fabulous\n\n## Install\n`npm install --save debug-fabulous`\n\n# Purpose\n\nWrapper / Extension around [visionmedia's debug](https://github.com/visionmedia/debug) to allow lazy evaluation of debugging via closure handling.\n\nThis library essentially wraps two things:\n\n- [lazy-debug](https://github.com/apihlaja/lazy-debug) for easy namespace naming by files\n- [lazy-eval](./src/lazy-eval.js) debug closure handling\n\n## Use\n\nFor thorough usage see the [tests](./test).\n\n## lazy-eval\n\n```js\nvar debug = require('')();\n// force namespace to be enabled otherwise it assumes process.env.DEBUG is setup\n// debug.save('myNamespace');\n// debug.enable(debug.load())\ndebug = debug('debug-fabulous');\ndebug(function(){return 'ya something to log' + someLargeHarryString;});\ndebug('small out');\n```\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2016 Nicholas McCready\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/debug-fabulous/download/debug-fabulous-0.0.4.tgz#fa071c5d87484685424807421ca4b16b0b1a0763",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/debug-fabulous/download/debug-fabulous-0.0.4.tgz",
+    "hash": "fa071c5d87484685424807421ca4b16b0b1a0763",
+    "registry": "npm",
+    "packageName": "debug-fabulous"
+  },
+  "registry": "npm",
+  "hash": "fa071c5d87484685424807421ca4b16b0b1a0763"
+}

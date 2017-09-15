@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "name": "bowser",
+    "description": "a browser detector",
+    "keywords": [
+      "ender",
+      "browser",
+      "sniff",
+      "detection"
+    ],
+    "version": "1.0.0",
+    "homepage": "https://github.com/ded/bowser",
+    "author": {
+      "name": "Dustin Diaz",
+      "email": "dustin@dustindiaz.com",
+      "url": "http://dustindiaz.com"
+    },
+    "main": "./bowser.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ded/bowser.git"
+    },
+    "devDependencies": {
+      "smoosh": "*",
+      "mocha": "*"
+    },
+    "bugs": {
+      "url": "https://github.com/ded/bowser/issues"
+    },
+    "scripts": {
+      "test": "make test"
+    },
+    "license": "MIT",
+    "_registry": "npm",
+    "_loc": "/home/vagrant/.cache/yarn/v1/npm-bowser-1.0.0-0290420bfb88013155754e20fa0de5279bcd810a/package.json",
+    "readmeFilename": "README.md",
+    "readme": "## Bowser\nA Browser detector. Because sometimes, there is no other way, and not even good modern browsers always provide good feature detection mechanisms.\n\n[![bowser ci](https://secure.travis-ci.org/ded/bowser.png)](https://travis-ci.org/ded/bowser/)\n\nSo... it works like this:\n\n``` js\nif (bowser.msie && bowser.version <= 6) {\n  alert('Hello China');\n}\n```\n\n## Flags set for detected Browsers[Engines]\n\n  * `chrome`[`webkit`]\n  * `firefox`[`gecko`]\n  * `msie`\n  * `msedge`\n  * Android native browser as `android`[`webkit`]\n  * iOS native browser as `ios`[`webkit`]\n  * `opera`[`webkit` if >12]\n  * `phantom`[`webkit`]\n  * `safari`[`webkit`]\n  * `seamonkey`[`gecko`]\n  * BlackBerry native browser as `blackberry`[`webkit`]\n  * WebOS native browser as `webos`[`webkit`]\n  * Amazon Kindle browser as `silk`[`webkit`]\n  * Bada browser as `bada`[`webkit`]\n  * Tizen browser as `tizen`[`webkit`]\n  * Sailfish browser as `sailfish`[`gecko`]\n\nFor all detected browsers the browser version is set in the `version` field.\n\n## Flags set for detected mobile Operating Systems\n\n  * `android`\n  * Windows Phone as `windowsphone`\n  * `ios` (`iphone`/`ipad`/`ipod`)\n  * `blackberry`\n  * `firefoxos`\n  * `webos` (`touchpad`)\n  * `bada`\n  * `tizen`\n  * `sailfish`\n\nAndroid, iOS, Windows Phone, WebOS, Bada, and Tizen will all report the OS version number if it is contained in the UA string in the `osversion` field. iOS is always reported as `ios` and additionally as `iphone`/`ipad`/`ipod`, whichever one matches best. If WebOS device is an HP TouchPad the flag `touchpad` is additionally set.\n\nAll detected mobile OSes are additionally flagged `mobile`, **if they are not powering a tablet device**. If a tablet device is detected, the flag `tablet` is set instead.\n\n### Notes\nSafari, Chrome and some other minor browsers will report that they have `webkit` engines, Firefox and Seamonkey will report that they have `gecko` engines.\n\n``` js\nif (bowser.webkit) {\n  // do stuff with safari & chrome & opera & android & blackberry & webos & silk\n}\n```\n\n### Ender Support\n\n`package.json`\n\n``` json\n\"dependencies\": {\n  \"bowser\": \"x.x.x\"\n}\n```\n\n``` js\nif (require('bowser').chrome) {\n  alert('Hello Silicon Valley')\n}\n```\n\n### Graded Browser Support\n\n``` js\nif (bowser.a) {\n  // support full feature set\n}\nelse if (bowser.c) {\n  // serve degraded version\n}\nelse {\n  // unsupported (bowser.x)\n}\n```\n\n### Contributing\nIf you'd like to contribute a change to bowser, modify the files in `src/`, then run the following (you'll need node + npm installed):\n\n``` sh\n$ npm install\n$ make test\n```\n\nPlease do not check-in the built files `bowser.js` and `bowser.min.js` in pull requests.\n\n### Adding tests\nSee the list in `src/useragents.js` with example user agents and their expected bowser object.\n\nWhenever you add support for new browsers or notice a bug / mismatch, please update the list and\ncheck if all tests are still passing.\n\n### License\nLicensed as MIT. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.\n",
+    "licenseText": "Copyright 2015, Dustin Diaz (the \"Original Author\")\nAll rights reserved.\n\nMIT License\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author's bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\n\nExcept where noted, this license applies to any and all software\nprograms and associated documentation files created by the\nOriginal Author, when distributed with the Software.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "http://registry.npm.taobao.org/bowser/download/bowser-1.0.0.tgz#0290420bfb88013155754e20fa0de5279bcd810a",
+    "type": "tarball",
+    "reference": "http://registry.npm.taobao.org/bowser/download/bowser-1.0.0.tgz",
+    "hash": "0290420bfb88013155754e20fa0de5279bcd810a",
+    "registry": "npm",
+    "packageName": "bowser"
+  },
+  "registry": "npm",
+  "hash": "0290420bfb88013155754e20fa0de5279bcd810a"
+}
