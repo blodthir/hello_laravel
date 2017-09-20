@@ -1,0 +1,14 @@
+_HiStOrY_V2_
+exit
+App\\User::find(1)
+App\\User::find(2)
+exit
+App\\User::find(1)
+App\\User::find(1)
+use\040App\\User
+$user\040=\040User::first()
+$user->is_admin=1)
+$user->is_admin=1
+$user->save()
+App\\User::find(1)
+exit
