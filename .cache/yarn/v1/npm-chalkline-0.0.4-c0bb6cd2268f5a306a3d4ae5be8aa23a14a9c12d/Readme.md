@@ -5,8 +5,8 @@
 > Draw a big chalkline in your terminal!
 
 <h1 align="center">
-  <img width="500" src="https://cdn.rawgit.com/niftylettuce/chalkline/master/media/logo.svg" />
-  <img alt="chalkline screenshot" src="https://cdn.rawgit.com/niftylettuce/chalkline/master/media/screenshot.png" />
+  <img width="500" src="https://cdn.jsdelivr.net/gh/niftylettuce/chalkline@master/media/logo.svg" />
+  <img alt="chalkline screenshot" src="https://cdn.jsdelivr.net/gh/niftylettuce/chalkline@master/media/screenshot.png" />
 </h1>
 
 <h4 align="center">
